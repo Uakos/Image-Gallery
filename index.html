@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <!-- FONT LOBSTER -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- FONT AWESONE -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="bgr"></div> <!-- BACKGROUND -->
+    <div class="slider">
+      <div class="text">
+        <h1>Athens</h1>
+      </div>
+      <div class="gallery-wrapper"> <!-- GALLERY WRAPPER -->
+        <div class="gallery-line"> <!-- GALLERY LINE -->
+          <img src="/img/1.jpg">
+          <img src="/img/2.jpg">
+          <img src="/img/3.jpg">
+          <img src="/img/4.jpg">
+          <img src="/img/5.jpg">
+          <img src="/img/6.jpg">
+        </div>
+      </div>
+      <div class="thumbnails"> <!-- THUMBNAILS -->
+        <img src="/img/1.jpg" onclick="$1()">
+        <img src="/img/2.jpg" onclick="$2()">
+        <img src="/img/3.jpg" onclick="$3()">
+        <img src="/img/4.jpg" onclick="$4()">
+        <img src="/img/5.jpg" onclick="$5()">
+        <img src="/img/6.jpg" onclick="$6()">
+      </div>
+      <div class="other"> <!-- NAVIGATION -->
+        <div class="minus-time" onclick="minusTime()"> <!-- MINUS SET TIME -->
+          <i class="fas fa-stopwatch"></i>
+          1s
+          <i class="fas fa-minus"></i>
+        </div>
+        <div class="spp"> <!-- STOP PLAY POUSE BUTTONS -->
+          <i class="fas fa-stop" onclick="stop()"></i>
+          <i class="fas fa-play" onclick="autoSlider()"></i>
+          <i class="fas fa-pause" onclick="pause()"></i>
+        </div>
+        <div class="plus-time" onclick="plusTime()"> <!-- PLUS SET TIME -->
+          <i class="fas fa-plus"></i>
+          1s
+          <i class="fas fa-stopwatch"></i>
+        </div>
+      </div>
+      <div class="left-right"> <!-- LEFT RIGHT BUTTONS -->
+        <i class="fas fa-chevron-left" onclick="slideLeft()"></i>
+        <i class="fas fa-chevron-right" onclick="slideRight()"></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
